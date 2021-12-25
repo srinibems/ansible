@@ -1,0 +1,5 @@
+
+---
+
+ - name: configure website
+   copy: src=index.html dest=/var/www/html

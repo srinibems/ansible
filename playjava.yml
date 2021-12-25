@@ -1,0 +1,8 @@
+---
+ - hosts: slave1
+   become: yes
+   roles:
+    - java
+   tasks:
+    - debug: 
+        msg: "Installed java in apace host"

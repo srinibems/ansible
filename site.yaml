@@ -1,0 +1,16 @@
+
+---
+ - hosts: slave1
+   become: yes
+   roles:
+    - web
+   tasks:
+    - debug:
+        msg: "Installed apache sucessfully"
+ - hosts: slave2
+   become: yes
+   roles:
+    - nginx
+   tasks:
+    - debug:
+        msg: "Installed nginx sucessfully"
